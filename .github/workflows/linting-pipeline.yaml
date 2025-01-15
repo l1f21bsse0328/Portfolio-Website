@@ -9,10 +9,10 @@ on:
 
 jobs:
   linting-job:
-    runs-on: ubantu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: build-step 
-        uses: action/checkout@v4
+        uses: actions/checkout@v4
       - name: instaling html hint  
         run: npm install --save-dev htmlhint
       - name: instaling style lint  
